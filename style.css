@@ -1,0 +1,83 @@
+body {
+	/*background: #000;*/
+	/*background-image: url("images/bg.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+}
+
+#wrapper {
+	border: 3px solid red;
+	max-width: 1000px;
+}
+
+/*----------------------------------------------------------------------- 
+	Navigation 
+-----------------------------------------------------------------------*/
+
+nav {
+	border: 3px solid blue;
+}
+
+.nav {
+	/*color: #fff;*/
+	text-transform: uppercase;
+}
+
+.nav::before, .nav::after {
+	content: "—";
+	font-weight: bold;
+}
+/* end */
+
+/*----------------------------------------------------------------------- 
+	Top Image (Hero)	 
+-----------------------------------------------------------------------*/
+#hero {
+	display: block;
+	width: 100%;
+	border: 1px solid blue;
+}
+/* end */
+
+
+/*----------------------------------------------------------------------- 
+	News
+-----------------------------------------------------------------------*/
+article {
+	border: 3px solid blue;
+}
+
+.read-more {
+	text-transform: uppercase;
+	color: #b32b2d;
+}
+
+.read-more::before {
+	content: "[";
+} 
+
+.read-more::after {
+	content: "]";
+}
+/* end */
+
+/*----------------------------------------------------------------------- 
+	Skateboarders
+-----------------------------------------------------------------------*/
+
+/* end */
+
+/*----------------------------------------------------------------------- 
+	Contact
+-----------------------------------------------------------------------*/
+::placeholder {
+	text-transform: uppercase;
+}
+/* end */
