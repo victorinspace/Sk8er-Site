@@ -1,5 +1,5 @@
 body {
-	/*background: #000;*/
+	background: #000;
 	/*background-image: url("images/bg.jpg");*/
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -10,24 +10,40 @@ body {
 
 ul {
 	list-style: none;
+	display: flex;
 }
 
 #wrapper {
 	border: 3px solid red;
 	max-width: 1000px;
+	position: relative;
 }
+
+/*----------------------------------------------------------------------- 
+	Top Social 
+-----------------------------------------------------------------------*/
+#top-social {
+	border: 3px solid blue;
+	float: right;
+}
+
+.top-social {
+	border: 3px solid green;
+}
+/* end */
 
 /*----------------------------------------------------------------------- 
 	Navigation 
 -----------------------------------------------------------------------*/
-
 nav {
 	border: 3px solid blue;
 }
 
 .nav {
-	/*color: #fff;*/
+	color: #fff;
 	text-transform: uppercase;
+	background: #b42a2f;
+	flex-direction: row;
 }
 
 .nav::before, .nav::after {
@@ -37,12 +53,12 @@ nav {
 /* end */
 
 /*----------------------------------------------------------------------- 
-	Top Image (Hero)	 
+	Hero Image	 
 -----------------------------------------------------------------------*/
 #hero {
 	display: block;
 	width: 100%;
-	border: 1px solid blue;
+	border: 3px solid blue;
 }
 /* end */
 
@@ -50,8 +66,15 @@ nav {
 /*----------------------------------------------------------------------- 
 	News
 -----------------------------------------------------------------------*/
-article {
+#news {
+	display: flex;
+	flex-direction: row;
 	border: 3px solid blue;
+}
+
+article {
+	border: 3px solid green;
+	background: #fff;
 }
 
 .read-more {
@@ -72,13 +95,47 @@ article {
 	Skateboarders
 -----------------------------------------------------------------------*/
 #skateboarders {
+	border: 3px solid blue;
+}
+
+#skateboarders img {
 	border: 3px solid green;
+}
+
+.tommy {
+	float: right;
+
+}
+/* end */
+
+/*----------------------------------------------------------------------- 
+	Boards
+-----------------------------------------------------------------------*/
+#boards {
+	border: 3px solid blue;
+}
+
+.skateboard {
+	border: 3px solid green;	
 }
 /* end */
 
 /*----------------------------------------------------------------------- 
 	Contact
 -----------------------------------------------------------------------*/
+#contact {
+	border: 3px solid blue;
+	background: #fff;
+}
+
+#contact-text {
+	border: 3px solid green;
+}
+
+#user-info {
+	border: 3px solid green;
+}
+
 ::placeholder {
 	text-transform: uppercase;
 }
