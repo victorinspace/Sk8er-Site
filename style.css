@@ -148,7 +148,7 @@ a.nav {
 }
 
 #skateboarders div {
-	width: 200;
+	width: 1000px;
   height: 100px;
   text-align: center;
   border: 5px solid #fbfbfb;
@@ -159,25 +159,29 @@ a.nav {
 
 #skateboarders #steve {
 	background-image: url("images/sk8er-1.png");
+	background-repeat: no-repeat;
 	width: 400px;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 #skateboarders #tommy {
 	background-image: url("images/sk8er-2.png");
+	background-repeat: no-repeat;
 	height: 200px;
-	margin-top: -100px;
+	/*margin-top: -100px;*/
 	line-height: 200px;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 #skateboarders #rodney {
 	background-image: url("images/sk8er-3.png");
+	background-repeat: no-repeat;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 #skateboarders #lance {
 	background-image: url("images/sk8er-4.png");
+	background-repeat: no-repeat;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 /* end */
