@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 body {
@@ -24,9 +23,11 @@ ul {
 }
 
 #wrapper {
-	max-width: 770px;
+	max-width: 1000px;
 	position: relative;
 	border-bottom: none;
+	display: flex;
+	flex-direction: column;
 }
 
 /*----------------------------------------------------------------------- 
@@ -41,6 +42,7 @@ ul {
 #top-social .fa {
 	padding: 20px;
 	margin-left: 8px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 .fa-facebook-f {
@@ -75,6 +77,7 @@ a.nav {
 	flex-direction: row;
 	justify-content: center;
 	padding: 5px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 .nav::before, .nav::after {
@@ -100,6 +103,7 @@ a.nav {
 
 	background-repeat: no-repeat;
 	overflow: auto;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 /* end */
 
@@ -116,9 +120,10 @@ a.nav {
 
 .card {
 	background: #fff;
-	max-width: 240px;
-	max-height: 200px;
+	max-width: 320px;
+	max-height: 350px;
 	padding: 20px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 .read-more {
@@ -139,34 +144,41 @@ a.nav {
 	Skateboarders
 -----------------------------------------------------------------------*/
 #skateboarders {
-	border: 3px solid blue;
-	max-height: 800px;
+	width: 1000px;
 }
 
-#skateboarders img {
-	border: 5px solid #fbfbfb;
-	display: block;
-	max-height: 500px;
+#skateboarders div {
+	width: 200;
+  height: 100px;
+  text-align: center;
+  border: 5px solid #fbfbfb;
+  color: white;
+  line-height:100px;
+  float:left;
 }
 
-.lance {
-	max-width: 100px;
+#skateboarders #steve {
+	background-image: url("images/sk8er-1.png");
+	width: 400px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
-.rodney {
-	max-width: 100px;
+#skateboarders #tommy {
+	background-image: url("images/sk8er-2.png");
+	height: 200px;
+	margin-top: -100px;
+	line-height: 200px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
-.steve {
-	max-width: 100px;
+#skateboarders #rodney {
+	background-image: url("images/sk8er-3.png");
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
-.tommy {
-	float: right;
-	max-width: 200px;
-	max-height: 500px;
-	width: 100%;
-	height: 100%;
+#skateboarders #lance {
+	background-image: url("images/sk8er-4.png");
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 /* end */
 
@@ -174,13 +186,13 @@ a.nav {
 	Boards
 -----------------------------------------------------------------------*/
 #boards {
-	/*border: 3px solid blue;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: space-around;
 	background: #fff;
 	margin: 10px 0;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 .skateboard {
@@ -198,6 +210,7 @@ a.nav {
 	flex-direction: row;
 	align-content: space-around;
 	margin-bottom: 30px;
+	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 #contact-text {
