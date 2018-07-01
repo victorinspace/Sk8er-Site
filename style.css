@@ -262,16 +262,17 @@ h5 {
 }
 
 #bottom-social .fa {
-	/*width: 30px;
-	height: 30px;*/
-	
-	padding: 5px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	/*padding: 10px;*/
+	/*margin-left: 8px;*/
 	font-size: 1.3em;
 	border-bottom: none;
 }
 
 #bottom-social .fa-facebook-f {
-	 filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 #bottom-social .fa-rss {
@@ -311,16 +312,16 @@ textarea{
 
 #submit {
 	border-radius: 0;
-    background: #AB2429;
-    color: white;
-    width: 170px;
-    height: 30px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  background: #AB2429;
+  color: white;
+  width: 170px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 ::placeholder {
