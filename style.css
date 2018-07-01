@@ -10,9 +10,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-	font-family: Helvetica, sans-serif;
-
+	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	justify-content: center;
 }
@@ -32,6 +30,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
+	padding-top: 10px;
 }
 
 /*----------------------------------------------------------------------- 
@@ -40,30 +39,37 @@ li {
 #top-social {
 	display: flex;
 	justify-content: flex-end;
-	border-bottom: none;
 }
 
-#top-social .fa {
-	padding: 20px;
+.fa {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 10px;
 	margin-left: 8px;
+	font-size: 1.7em;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
 }
 
 .fa-facebook-f {
 	background: #445897;
+	color: #7482b1;
 
 }
 
 .fa-rss {
 	background: #cf923a;
+	color: #d9ac62;
 }
 
 .fa-twitter {
 	background: #698cc7;
+	color: #90a8d4;
 }
 
 .fa-youtube {
 	background: #b2382d;
+	color: #c06b62;
 }
 /* end */
 
@@ -86,13 +92,22 @@ li {
   background: #b42a2f;
   text-align: center;
   line-height: 0;
-  border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+  border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 .nav::before, .nav::after {
 	content: "—";
 	font-weight: bold;
+	padding: 0 10px;
 }
+
+/*.nav::before {
+	padding: 0 10px;	
+}
+
+.nav::after {
+	padding: 20px;
+}*/
 /* end */
 
 /*----------------------------------------------------------------------- 
@@ -110,13 +125,21 @@ li {
 	background-image: url("images/peralta-logo.png"), url("images/grid.png"), url("top-image.png");
 	background-repeat: no-repeat;
 	overflow: auto;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 /* end */
 
 /*----------------------------------------------------------------------- 
 	News
 -----------------------------------------------------------------------*/
+h2 {
+	color: #393937;
+}
+h5 {
+	font-size: 12px;
+	color: #a6a6a6;
+}
+
 #news {
 	display: flex;
 	flex-direction: row;
@@ -129,7 +152,7 @@ li {
 	max-width: 320px;
 	max-height: 350px;
 	padding: 20px;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 .read-more {
@@ -167,7 +190,7 @@ li {
 	background-image: url("images/sk8er-1.png");
 	background-repeat: no-repeat;
 	width: 400px;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 #skateboarders #tommy {
@@ -176,19 +199,19 @@ li {
 	height: 200px;
 	/*margin-top: -100px;*/
 	line-height: 200px;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 #skateboarders #rodney {
 	background-image: url("images/sk8er-3.png");
 	background-repeat: no-repeat;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 #skateboarders #lance {
 	background-image: url("images/sk8er-4.png");
 	background-repeat: no-repeat;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 /* end */
 
@@ -196,17 +219,16 @@ li {
 	Boards
 -----------------------------------------------------------------------*/
 #boards {
+	width: 1000px;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: space-around;
+	justify-content: space-around;
 	background: #fff;
 	margin: 10px 0;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	padding: 20px 0 20px 0;
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 .skateboard {
-	border-bottom: none;
 	margin: 0 6px
 }
 /* end */
@@ -217,10 +239,9 @@ li {
 #contact {
 	background: #fff;
 	display: flex;
-	flex-direction: row;
-	align-content: space-around;
-	margin-bottom: 30px;
-	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	justify-content: space-around;
+	margin: 20px 0 30px;
+	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
 }
 
 #contact-text {
@@ -229,10 +250,24 @@ li {
 	width: 100%;
 	margin: 10px;
 	padding: 10px;
+	line-height: 25px;
+}
+
+#bottom-social {
+	display: flex;
+	justify-content: space-between;
+	width: 110px;
+	text-align: center;
+	line-height: 20px;
 }
 
 #bottom-social .fa {
+	/*width: 30px;
+	height: 30px;*/
+	
 	padding: 5px;
+	font-size: 1.3em;
+	border-bottom: none;
 }
 
 #bottom-social .fa-facebook-f {
@@ -252,11 +287,40 @@ li {
 }
 
 #user-info {
-	/*border: 2px solid green;*/
-	max-width: 300px;
-	width: 100%;
+	max-width: 400px;
 	margin: 10px;
 	padding: 10px;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+	padding: 5px;
+	margin-top: 15px;
+	border-left: 4px solid #b2b2b2;
+	border-top: 4px solid #b2b2b2;
+}
+
+textarea{
+	width: 300px;
+	height: 100px;
+	margin-top: 15px;
+	border-top: 4px solid #b2b2b2;
+	border-left: 4px solid #b2b2b2;
+}
+
+#submit {
+	border-radius: 0;
+    background: #AB2429;
+    color: white;
+    width: 170px;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 ::placeholder {
