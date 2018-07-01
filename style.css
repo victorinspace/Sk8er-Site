@@ -174,44 +174,70 @@ h5 {
 -----------------------------------------------------------------------*/
 #skateboarders {
 	width: 1000px;
+	margin-top: 20px;
 }
 
-#skateboarders div {
-	width: 1000px;
+.dudes {
+	width: 300px;
   height: 100px;
   text-align: center;
   border: 5px solid #fbfbfb;
   color: white;
   line-height:100px;
   float:left;
-}
 
-#skateboarders #steve {
-	background-image: url("images/sk8er-1.png");
-	background-repeat: no-repeat;
-	width: 400px;
-	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
-}
 
-#skateboarders #tommy {
-	background-image: url("images/sk8er-2.png");
-	background-repeat: no-repeat;
-	height: 200px;
-	/*margin-top: -100px;*/
-	line-height: 200px;
-	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
-}
 
-#skateboarders #rodney {
-	background-image: url("images/sk8er-3.png");
-	background-repeat: no-repeat;
-	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+	/*background:#000;*/
+  color:#FEFCFF;
+  line-height:1;
+  height:200px;
+  
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 60px;
+  text-align: center;
 }
 
 #skateboarders #lance {
-	background-image: url("images/sk8er-4.png");
+	height:230px;
+	background-image: url("images/sk8er-4.png"); 
+	/*background-position: -209px 0;*/
 	background-repeat: no-repeat;
-	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+	background-size: cover;
+}
+
+#skateboarders #rodney {
+	height:230px;
+	background-image: url("images/sk8er-3.png"); 
+	/*background-position: -17px -3px;*/
+	background-repeat: no-repeat;
+	margin-left: 12px;
+	background-size: cover;
+}
+
+#skateboarders #steve {
+	background-image: url("images/sk8er-1.png"); 
+  clear:left;
+  height: 230px;
+  /*background-position: 12px -55px;*/
+  background-repeat: no-repeat;
+  margin-top: -19px;
+	width: 652px;
+}
+
+#skateboarders #tommy {
+	background-image: url("images/sk8er-2.png"); 
+	height:500px;
+	line-height:47px;
+	/*background-position: -600px -1px;*/
+	background-repeat: no-repeat;
+	margin: -235px 0 0 12px;
+	float: right;
+	background-size: cover;
 }
 /* end */
 
