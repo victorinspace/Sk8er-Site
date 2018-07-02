@@ -78,10 +78,10 @@ li {
 -----------------------------------------------------------------------*/
 #navigation {
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
-	position: relative;
 	color: #fff;
-	font-size: 20px;
+	font-size: 16px;
 	margin-top: 20px;
 	text-transform: uppercase;
 }
@@ -93,21 +93,22 @@ li {
   text-align: center;
   line-height: 0;
   border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+  padding-top: 17px;
 }
 
-.nav::before, .nav::after {
+.nav p::before, .nav p::after {
 	content: "—";
 	font-weight: bold;
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 }
 
-/*.nav::before {
-	padding: 0 10px;	
+.nav p::before {
+	padding-right: 10px;
 }
 
-.nav::after {
-	padding: 20px;
-}*/
+.nav p::after {
+	padding-left: 10px;
+}
 /* end */
 
 /*----------------------------------------------------------------------- 
@@ -118,14 +119,15 @@ li {
 	height: 300px;
 	border: 10px solid #fbfbfb;
 	margin-top: 20px;
-	display: block;
+	display: inline-block;
 	object-position: center;
 	object-position: -379px -186px;
 	object-fit: none;
-	background-image: url("images/peralta-logo.png"), url("images/grid.png"), url("top-image.png");
+	background-image: url("images/peralta-logo.png"), url("images/grid.png"), url("images/top-image.png");
 	background-repeat: no-repeat;
-	overflow: auto;
-	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+	background-position: 3% 50%;
+	/*overflow: auto;*/
+	/*border-bottom: 4px solid rgba(130, 129, 126, 0.9);*/
 }
 /* end */
 
@@ -134,15 +136,18 @@ li {
 -----------------------------------------------------------------------*/
 h2 {
 	color: #393937;
+	margin-bottom: 10px;
 }
+
 h5 {
 	font-size: 12px;
 	color: #a6a6a6;
+	margin: 5px 0;
 }
 
 #news {
 	display: flex;
-	flex-direction: row;
+	/*flex-direction: row;*/
 	justify-content: space-between;
 	margin: 10px 0;
 }
@@ -151,13 +156,20 @@ h5 {
 	background: #fff;
 	max-width: 320px;
 	max-height: 350px;
-	padding: 20px;
+	padding: 25px 25px 15px;
 	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+	margin-top: 20px;
+}
+
+.card p {
+	font-size: 14px;
+	margin: 5px 0;
 }
 
 .read-more {
 	text-transform: uppercase;
 	color: #b32b2d;
+	text-align: center;
 }
 
 .read-more::before {
@@ -208,9 +220,8 @@ h5 {
 #rodney {
 	height: 230px;
 	background-image: url("images/sk8er-3.png"); 
-	background-position: -17px -3px;
+	background-position: -17px 0;
 	background-repeat: no-repeat;
-	/*margin-left: 12px;*/
 	background-size: cover;
 }
 
