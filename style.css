@@ -49,6 +49,7 @@ li {
 	margin-left: 8px;
 	font-size: 1.7em;
 	border-bottom: 3px solid rgba(130, 129, 126, 0.6);
+	cursor: pointer;
 }
 
 .fa-facebook-f {
@@ -94,6 +95,7 @@ li {
   line-height: 0;
   border-bottom: 4px solid rgba(130, 129, 126, 0.9);
   padding-top: 17px;
+  cursor: pointer;
 }
 
 .nav p::before, .nav p::after {
@@ -126,6 +128,7 @@ li {
 	background-image: url("images/peralta-logo.png"), url("images/grid.png"), url("images/top-image.png");
 	background-repeat: no-repeat;
 	background-position: 3% 50%, 0% 0%, 40% 20%;
+	cursor: pointer;
 }
 /* end */
 
@@ -185,6 +188,7 @@ h5 {
 #skateboarders {
 	width: 1000px;
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 .dudes {
@@ -257,6 +261,7 @@ h5 {
 	margin: 10px 0;
 	padding: 20px 0 20px 0;
 	border-bottom: 4px solid rgba(130, 129, 126, 0.9);
+	cursor: pointer;
 }
 
 .skateboard {
@@ -353,6 +358,7 @@ textarea{
   float: right;
   margin-top: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 ::placeholder {
